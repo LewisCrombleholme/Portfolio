@@ -260,6 +260,10 @@ body::-webkit-scrollbar-button {
         display: none;
     }
 
+    .nav__button {
+        overflow: hidden;
+    }
+
     .herobanner {
         width: 100%;
         height: 1250px;
@@ -280,7 +284,6 @@ body::-webkit-scrollbar-button {
 
     .herobanner__text > h2 {
         position: relative;
-        left: 30px;
         margin-bottom: 30px;
     }
 
@@ -294,6 +297,10 @@ body::-webkit-scrollbar-button {
 @media screen and (max-width: 768px){
     .nav__links li {
         display: none;
+    }
+
+    .nav__button {
+        overflow: hidden;
     }
 
     .herobanner {
