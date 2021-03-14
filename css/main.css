@@ -27,6 +27,10 @@
     -webkit-user-drag: none;
 }
 
+html, body {
+    background-color: #090A11;
+}
+
 ul, li, a {
     text-decoration: none;
     list-style: none;
