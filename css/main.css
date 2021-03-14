@@ -305,7 +305,7 @@ body::-webkit-scrollbar-button {
 
     .herobanner {
         width: 100%;
-        height: 600px;
+        height: 620px;
     }
 
     .herobanner > img {
@@ -324,7 +324,6 @@ body::-webkit-scrollbar-button {
     .herobanner__text > h2 {
         position: relative;
         font-size: 30px;
-        margin-left: -25px;
     }
 
     .herobanner__text > p {
