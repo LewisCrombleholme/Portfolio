@@ -264,7 +264,7 @@ body::-webkit-scrollbar-button {
         display: none;
     }
 
-    .nav__button {
+    .ripple {
         overflow: hidden;
     }
 
@@ -292,7 +292,9 @@ body::-webkit-scrollbar-button {
     }
 
     .herobanner__text > p {
+        position: relative;
         font-size: 24px;
+        top: -20px;
     }
 
 }
@@ -304,6 +306,12 @@ body::-webkit-scrollbar-button {
     }
 
     .nav__button {
+        font-size: 12px;
+        width: fit-content;
+        height: auto;
+    }
+
+    .ripple {
         overflow: hidden;
     }
 
@@ -331,6 +339,8 @@ body::-webkit-scrollbar-button {
     }
 
     .herobanner__text > p {
+        position: relative;
+        top: -20px;
         font-size: 16px;
         width: 300px;
     }
