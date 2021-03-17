@@ -29,6 +29,7 @@
 
 html, body {
     background-color: #090A11;
+    color: #fff;
 }
 
 ul, li, a {
@@ -49,8 +50,9 @@ button {
 .container {
     position: absolute;
     width: 100%;
-    height: 3220px;
+    height: fit-content;
     background-color: #090A11;
+    overflow-x: hidden;
 }
 
 /* Nav bar Styling */
@@ -129,29 +131,33 @@ button {
 /* HeroBanner */
 
 .herobanner {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 120px;
-    height: 850px;
+    padding: 70px 0;
+    height: fit-content;
     width: 100%;
 
     z-index: 1;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.herobanner > img {
-    position: absolute;
-    width: 750px;
-    top: 10%;
-    left: 55vw;
+.room {
+    margin-right: 10%;
+    padding: 20px 0;
+}
+
+.room > img {
+    width: 700px;
 }
 
 .herobanner__text {
-    position: absolute;
-    top: 30%;
+    position: relative;
     left: 10%;
     width: 500px;
-    text-align: justify;
-    height: auto;
+    min-width: 500px;
+    height: fit-content;
 
     color: #f5f5f5;
 }
@@ -166,6 +172,411 @@ button {
 .herobanner__text > p {
     font-family: Ygro Book;
     font-size: 20px;
+}
+
+/* Experiance */
+
+.experienceandskills {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.experience {
+    position: relative;
+    padding-top: 120px;
+    width: 100%;
+    height: 800px;
+}
+
+.tag {
+    font-family: Ygro Book;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.category__title {
+    font-family: Ygro Bold;
+    font-size: 56px;
+}
+
+.experience > h1 {
+    text-align: center;
+}
+
+.experience__open {
+    margin-left: 10.2vw;
+    padding-bottom: 20px;
+}
+
+.experience__close {
+    float: right;
+    margin-right: 10.2vw;
+    padding-top: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 70px 0;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 210px;
+    min-width: 210px;
+    height: 150px;
+
+    margin: 0 2vw;
+
+
+    background: #10121D;
+    border-radius: 16px;
+    cursor: grab;
+    opacity: 0.5;
+}
+
+.experience__info > img {
+    position: relative;
+    left: 16px;
+    top: 16px;
+    width: 25px;
+}
+
+.experience__info > h4 {
+    position: relative;
+    left: 114px;
+
+    font-family: Ygro Book;
+    font-size: 12px;
+
+    opacity: 0.5;
+}
+
+.experience__info > h1 {
+    position: relative;
+    top: 20px;
+    left: 16px;
+
+    font-family: Ygro Mid;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.experience__info > h2 {
+    position: relative;
+    top: 30px;
+    left: 16px;
+
+    font-family: Ygro Book;
+    font-weight: 300;
+    font-size: 18px;
+
+    opacity: 0.5;
+}
+
+.active {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.timeline__pages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin: 5px;
+
+    background: #10121D;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.arrow > img {
+    padding: 9px 12px;
+    opacity: 0.7;
+}
+
+.arrow > img:hover {
+    opacity: 1;
+}
+
+/* Skills */
+
+.skills {
+    position: relative;
+    top: -150px;
+    overflow-x: hidden;
+}
+
+.skills__open {
+    margin-left: 10.2vw;
+}
+
+.skills__close {
+    float: right;
+    margin-right: 10.2vw;
+}
+
+.skills > h1 {
+    text-align: center;
+}
+
+.toplist {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.toplist h3 {
+    position: relative;
+    left: 20px;
+    padding: 30px 70px;
+
+    font-family: Ygro Book;
+    font-size: 22px;
+}
+
+.bottomlist {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomlist h3 {
+    position: relative;
+    padding: 30px 70px;
+
+    font-family: Ygro Book;
+    font-size: 22px;
+}
+
+/* Projects */
+
+.projects {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+    padding-top: 150px;
+}
+
+.project__selection {
+    display: flex;
+    justify-content: center;
+}
+
+.projects__open {
+    position: relative;
+    margin-left: 10.2vw;
+}
+
+.projects__close {
+    position: relative;
+    float: right;
+    margin-right: 10.2vw;
+}
+
+.projects > h1 {
+    text-align: center;
+}
+
+.projects__tabs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: Ygro Mid;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.tab__active {
+    width: fit-content;
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(45deg, #86A8E7, #4631C1) 1;
+}
+
+.project__banner {
+    position: relative;
+    height: 448px;
+    width: 274px;
+    min-width: 274px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 32px;
+
+    background: #10121D;
+    border-radius: 16px;
+}
+
+.projects__pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__icon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 233px;
+
+    background: #141624;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.project__icon > img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 67px 87px 66px 87px;
+
+    opacity: 0.8;
+}
+
+.project__info {
+    position: relative;
+    top: 120px;
+    height: 215px;
+    padding: 16px 16px 24px 16px;
+}
+
+.madewithtags > button {
+    position: relative;
+    height: 23px;
+    width: fit-content;
+    padding: 2px 10px;
+    margin: 0 8px 16px 0;
+
+    font-family: Ygro Book;
+    font-size: 12px;
+
+    background: #4631C1;
+    border-radius: 14px;
+
+    color: #f5f5f5;
+    opacity: 0.8;
+}
+
+.project__text > h1 {
+    font-family: Ygro Mid;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project__text > p {
+    font-family: Ygro Book;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.github {
+    margin-left: 37px;
+    width: 168px;
+    height: 42px;
+    background: #181A2B;
+    border-radius: 8px;
+
+    transition: all 1s ease-in-out;
+}
+
+.github > h4 {
+    float: left;
+    padding: 11px 0 12px 16px;
+
+    font-family: Ygro Book;
+    font-weight: 100;
+    font-size: 15px;
+
+    color: #f5f5f6;
+    opacity: 0.5;
+}
+
+.github > img {
+    position: relative;
+    top: 13px;
+}
+
+.github:hover {
+    transform: translateY(-5px);
+    box-shadow: -3px 5px 15px 0.2px rgba(27, 19, 76, 0.4);
+
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    height: 200px;
+    width: 100%;
+
+    margin-top: 100px;
+
+    background: linear-gradient(269.4deg, #4631C1 -13.43%, #10121D 119.65%);
+}
+
+.footer__logo {
+    position: relative;
+    top: 62px;
+    width: 200px;
+    margin-left: 10vw;
+
+    font-family: Ygro Bold;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.footer__button {
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    padding: 11px 12px;
+    float: right;
+    margin: 0 0 13px 16px;
+
+    background-color: #4631C1;
+}
+
+.footer__info {
+    float: right;
+    margin-right: 9vw;
+}
+
+.footer__email {
+    font-family: Ygro Book;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 30px;
+
+    font-family: Ygro Book;
+    font-weight: 300;
+    font-size: 14px;
+    
+    opacity: 0.5;
 }
 
 /* TypeWriter Effect */
@@ -260,88 +671,10 @@ body::-webkit-scrollbar-button {
 
 /* Tablet Screen */ 
 @media screen and (max-width: 1024px){
-    .nav__links li {
-        display: none;
-    }
-
-    .ripple {
-        overflow: hidden;
-    }
-
-    .herobanner {
-        width: 100%;
-        height: 1250px;
-        overflow-x: hidden;
-    }
-
-    .herobanner > img {
-        position: absolute;
-        top: 450px;
-        left: 14%;
-    }
-
-    .herobanner__text {
-        position: absolute;
-        top: 150px;
-        left: 25vw;
-    }
-
-    .herobanner__text > h2 {
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-    .herobanner__text > p {
-        position: relative;
-        font-size: 24px;
-        top: -20px;
-    }
 
 }
 
 /* Mobile Screen */ 
 @media screen and (max-width: 768px){
-    .nav__links li {
-        display: none;
-    }
 
-    .nav__button {
-        font-size: 12px;
-        width: fit-content;
-        height: auto;
-    }
-
-    .ripple {
-        overflow: hidden;
-    }
-
-    .herobanner {
-        width: 100%;
-        height: 620px;
-    }
-
-    .herobanner > img {
-        position: absolute;
-        top: 225px;
-        left: -3%;
-        width: 400px;
-    }
-
-    .herobanner__text {
-        position: absolute;
-        top: 40px;
-        left: 10vw;
-    }
-
-    .herobanner__text > h2 {
-        position: relative;
-        font-size: 30px;
-    }
-
-    .herobanner__text > p {
-        position: relative;
-        top: -20px;
-        font-size: 16px;
-        width: 300px;
-    }
 }
