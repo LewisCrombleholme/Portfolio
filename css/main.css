@@ -50,6 +50,8 @@ button {
 .container {
     position: absolute;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: #090A11;
     overflow-x: hidden;
@@ -72,18 +74,18 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 10%;
+    padding: 2.5rem 10%;
     z-index: 5;
 }
 
 .logo {
     position: relative;
-    width: 118px;
-    height: 30px;
+    width: 7.375rem;
+    height: 1.875rem;
 
     font-family: Ygro Bold;
-    font-size: 16px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 0.9375rem;
 
     color: #f5f5f5;
     cursor: pointer;
@@ -91,40 +93,40 @@ button {
 
 .nav__links li {
     display: inline-block;
-    padding: 0 35px;
+    padding: 0 2.1875rem;
 }
 
-.nav__links li a {
+.nav__item {
     font-family: Ygro Mid;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
 
-    opacity: 0.5;
+    opacity: 0.3;
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
+.nav__item:hover {
     opacity: 1;
 }
 
-.nav__links .active {
-    opacity: 0.9;
+.active {
+    opacity: 0.8;
 }
 
 .nav__button {
     position: relative;
     top: 0;
-    padding: 9px 25px;
-    width: 148px;
-    height: 40px;
+    padding: 0.5625rem 1.5625rem;
+    width: 9.25rem;
+    height: 2.5rem;
 
     font-family: Ygro Mid;
-    font-size: 16px;
+    font-size: 1rem;
     color: #f5f5f5;
 
-    border-radius: 38px;
-    background: linear-gradient(45deg, #4631C1,#86A8E7);
+    border-radius: 2.375rem;
+    background: linear-gradient(45deg, #4631C1,#6B5CC1);
     overflow: hidden;
 }
 
@@ -134,8 +136,10 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
-    padding: 70px 0;
+    margin-top: 7.5rem;
+    padding: 4.375rem 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 100%;
 
@@ -144,19 +148,20 @@ button {
 }
 
 .room {
-    margin-right: 10%;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .room > img {
-    width: 700px;
+    width: 60rem;
 }
 
 .herobanner__text {
     position: relative;
     left: 10%;
-    width: 500px;
-    min-width: 500px;
+    width: 31.25rem;
+    min-width: 31.25rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 
     color: #f5f5f5;
@@ -164,14 +169,14 @@ button {
 
 .herobanner__text > h2 {
     font-family: Ygro Bold;
-    font-size: 50px;
+    font-size: 3.125rem;
 
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .herobanner__text > p {
     font-family: Ygro Book;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Experiance */
@@ -179,40 +184,43 @@ button {
 .experienceandskills {
     position: relative;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
-.experience {
+.experience__section {
     position: relative;
-    padding-top: 120px;
+    padding-top: 7.5rem;
     width: 100%;
-    height: 800px;
+    height: 50rem;
 }
 
 .tag {
     font-family: Ygro Book;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 0.4;
 }
 
 .category__title {
     font-family: Ygro Bold;
-    font-size: 56px;
+    font-size: 3.5rem;
 }
 
-.experience > h1 {
+.experience__section > h1 {
     text-align: center;
+    padding-bottom: 1.875rem;
 }
 
 .experience__open {
     margin-left: 10.2vw;
-    padding-bottom: 20px;
+    padding-bottom: 5rem;
 }
 
 .experience__close {
     float: right;
     margin-right: 10.2vw;
-    padding-top: 20px;
+    padding-top: 5rem;
 }
 
 .timeline {
@@ -222,7 +230,7 @@ button {
     align-items: center;
     width: 100%;
 
-    margin: 70px 0;
+    margin: 4.375rem 0;
 }
 
 .experience__info {
@@ -230,108 +238,113 @@ button {
     flex-direction: column;
     align-items: flex-start;
 
-    width: 210px;
-    min-width: 210px;
-    height: 150px;
+    width: 13.125rem;
+    min-width: 13.125rem;
+    height: 9.375rem;
 
     margin: 0 2vw;
 
 
     background: #10121D;
-    border-radius: 16px;
-    cursor: grab;
+    border-radius: 1rem;
     opacity: 0.5;
+
+    transition: all 1s 0.1s ease-in-out;
 }
 
 .experience__info > img {
     position: relative;
-    left: 16px;
-    top: 16px;
-    width: 25px;
+    left: 1rem;
+    top: 1rem;
+    width: 1.5625rem;
 }
 
 .experience__info > h4 {
     position: relative;
-    left: 114px;
+    left: 7.125rem;
 
     font-family: Ygro Book;
-    font-size: 12px;
+    font-size: 0.75rem;
 
     opacity: 0.5;
 }
 
 .experience__info > h1 {
     position: relative;
-    top: 20px;
-    left: 16px;
+    top: 1.25rem;
+    left: 1rem;
 
     font-family: Ygro Mid;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
 }
 
 .experience__info > h2 {
     position: relative;
-    top: 30px;
-    left: 16px;
+    top: 1.875rem;
+    left: 1rem;
 
     font-family: Ygro Book;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
 
     opacity: 0.5;
 }
 
-.active {
-    transform: scale(1.3);
-    opacity: 1;
-}
-
 .timeline__pages {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
+    margin-top: 17rem;
+    display: none;
 }
 
 .arrow {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
-    margin: 5px;
+    margin: 0.3125rem;
 
     background: #10121D;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
 .arrow > img {
-    padding: 9px 12px;
+    padding: 0.5625rem 0.75rem;
     opacity: 0.7;
 }
 
-.arrow > img:hover {
+.exp__active {
     opacity: 1;
+    transform: scale(1.3);
 }
 
 /* Skills */
 
 .skills {
     position: relative;
-    top: -150px;
+    top: -3rem;
     overflow-x: hidden;
 }
 
 .skills__open {
     margin-left: 10.2vw;
+    padding-bottom: 1.875rem;
 }
 
 .skills__close {
     float: right;
+    padding-top: 1.875rem;
     margin-right: 10.2vw;
 }
 
 .skills > h1 {
     text-align: center;
+}
+
+.skill__list {
+    margin: 60px 0;
 }
 
 .toplist {
@@ -343,11 +356,11 @@ button {
 
 .toplist h3 {
     position: relative;
-    left: 20px;
-    padding: 30px 70px;
+    left: 1.25rem;
+    padding: 1.875rem 4.375rem;
 
     font-family: Ygro Book;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .bottomlist {
@@ -355,24 +368,27 @@ button {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .bottomlist h3 {
     position: relative;
-    padding: 30px 70px;
+    padding: 1.875rem 4.375rem;
 
     font-family: Ygro Book;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 /* Projects */
 
-.projects {
+.projects__section {
     position: relative;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     overflow-x: hidden;
-    padding-top: 150px;
+    padding-top: 9.375rem;
 }
 
 .project__selection {
@@ -383,15 +399,17 @@ button {
 .projects__open {
     position: relative;
     margin-left: 10.2vw;
+    padding-bottom: 1.875rem;
 }
 
 .projects__close {
     position: relative;
     float: right;
     margin-right: 10.2vw;
+    padding-top: 1.875rem;
 }
 
-.projects > h1 {
+.projects__section > h1 {
     text-align: center;
 }
 
@@ -400,76 +418,82 @@ button {
     display: flex;
     justify-content: center;
     font-family: Ygro Mid;
-    font-size: 12px;
-    margin-top: 30px;
+    font-size: 0.75rem;
+    margin-top: 1.875rem;
 }
 
 .tab__active {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
-    padding-bottom: 2px;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(45deg, #86A8E7, #4631C1) 1;
+    padding-bottom: 0.125rem;
+    border-bottom: 0.125rem solid;
+    -o-border-image: linear-gradient(45deg, #6B5CC1, #4631C1) 1;
+       border-image: linear-gradient(45deg, #6B5CC1, #4631C1) 1;
 }
 
 .project__banner {
     position: relative;
-    height: 448px;
-    width: 274px;
-    min-width: 274px;
+    height: 28rem;
+    width: 17.125rem;
+    min-width: 17.125rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 32px;
+    margin: 2rem;
 
     background: #10121D;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 .projects__pages {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .project__icon {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 233px;
+    height: 14.5625rem;
 
     background: #141624;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .project__icon > img {
     position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 67px 87px 66px 87px;
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 4.1875rem 5.4375rem 4.125rem 5.4375rem;
 
     opacity: 0.8;
 }
 
 .project__info {
     position: relative;
-    top: 120px;
-    height: 215px;
-    padding: 16px 16px 24px 16px;
+    top: 7.5rem;
+    height: 13.4375rem;
+    padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .madewithtags > button {
     position: relative;
-    height: 23px;
+    height: 1.4375rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
-    padding: 2px 10px;
-    margin: 0 8px 16px 0;
+    padding: 0.125rem 0.625rem;
+    margin: 0 0.5rem 1rem 0;
 
     font-family: Ygro Book;
-    font-size: 12px;
+    font-size: 0.75rem;
 
     background: #4631C1;
-    border-radius: 14px;
+    border-radius: 0.875rem;
 
     color: #f5f5f5;
     opacity: 0.8;
@@ -477,33 +501,33 @@ button {
 
 .project__text > h1 {
     font-family: Ygro Mid;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 1.125rem;
+    margin-bottom: 0.3125rem;
 }
 
 .project__text > p {
     font-family: Ygro Book;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 0.875rem;
+    margin-bottom: 1.875rem;
 }
 
 .github {
-    margin-left: 37px;
-    width: 168px;
-    height: 42px;
+    margin-left: 2.3125rem;
+    width: 10.5rem;
+    height: 2.625rem;
     background: #181A2B;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     transition: all 1s ease-in-out;
 }
 
 .github > h4 {
     float: left;
-    padding: 11px 0 12px 16px;
+    padding: 0.6875rem 0 0.75rem 1rem;
 
     font-family: Ygro Book;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 0.9375rem;
 
     color: #f5f5f6;
     opacity: 0.5;
@@ -511,12 +535,12 @@ button {
 
 .github > img {
     position: relative;
-    top: 13px;
+    top: 0.8125rem;
 }
 
 .github:hover {
-    transform: translateY(-5px);
-    box-shadow: -3px 5px 15px 0.2px rgba(27, 19, 76, 0.4);
+    transform: translateY(-0.3125rem);
+    box-shadow: -0.1875rem 0.3125rem 0.9375rem 0.0125rem rgba(27, 19, 76, 0.4);
 
 }
 
@@ -524,32 +548,32 @@ button {
 
 footer {
     position: relative;
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
 
-    margin-top: 100px;
+    margin-top: 6.25rem;
 
     background: linear-gradient(269.4deg, #4631C1 -13.43%, #10121D 119.65%);
 }
 
 .footer__logo {
     position: relative;
-    top: 62px;
-    width: 200px;
+    top: 3.875rem;
+    width: 12.5rem;
     margin-left: 10vw;
 
     font-family: Ygro Bold;
-    font-size: 30px;
-    line-height: 26px;
+    font-size: 1.875rem;
+    line-height: 1.625rem;
 }
 
 .footer__button {
-    width: 42px;
-    height: 42px;
-    border-radius: 42px;
-    padding: 11px 12px;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 2.625rem;
+    padding: 0.6875rem 0.75rem;
     float: right;
-    margin: 0 0 13px 16px;
+    margin: 0 0 0.8125rem 1rem;
 
     background-color: #4631C1;
 }
@@ -562,7 +586,7 @@ footer {
 .footer__email {
     font-family: Ygro Book;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .copyright {
@@ -570,11 +594,11 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    top: 30px;
+    top: 1.875rem;
 
     font-family: Ygro Book;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875rem;
     
     opacity: 0.5;
 }
@@ -584,7 +608,7 @@ footer {
 .typed__text {
     font-family: Ygro Bold;
 
-    background: linear-gradient(45deg, #86A8E7,#4631C1);
+    background: linear-gradient(45deg, #6B5CC1,#4631C1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
@@ -594,16 +618,36 @@ footer {
 .typewriter__cursor {
     display: inline-block;
     width: 2px;
+    margin-left: 0px;
     background-color: #ccc;
-    margin-left: 0.2rem;
-    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
+            animation: blink 1s infinite;
 }
 
 .typewriter__cursor.typing {
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
 }
 
 /* TypeWriter Effect - Cursor Effect */
+
+@-webkit-keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
 
 @keyframes blink {
     0% {
@@ -631,18 +675,32 @@ footer {
     transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
-    animation: ripple 1s linear infinite;
+    -webkit-animation: ripple 1s linear infinite;
+            animation: ripple 1s linear infinite;
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        width: 0rem;
+        height: 0rem;
+        opacity: 0.5;
+    }
+    100% {
+        width: 25rem;
+        height: 25rem;
+        opacity: 0;
+    }
 }
 
 @keyframes ripple {
     0% {
-        width: 0px;
-        height: 0px;
+        width: 0rem;
+        height: 0rem;
         opacity: 0.5;
     }
     100% {
-        width: 400px;
-        height: 400px;
+        width: 25rem;
+        height: 25rem;
         opacity: 0;
     }
 }
@@ -651,7 +709,7 @@ footer {
 
 /* Total Width */
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 0.75rem;
 }
 /* background of the scrollbar apart from button or resizer */
 body::-webkit-scrollbar-track {
@@ -659,9 +717,9 @@ body::-webkit-scrollbar-track {
 }
 /* scrollbar itself */
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #4631C1,#86A8E7);
-    border-radius: 12px;
-    border: 4px solid #090A11;
+    background: linear-gradient(180deg, #4631C1,#6B5CC1);
+    border-radius: 0.75rem;
+    border: 0.25rem solid #090A11;
 }
 /* Set top and bottom buttons */
 body::-webkit-scrollbar-button {
@@ -670,11 +728,11 @@ body::-webkit-scrollbar-button {
 
 
 /* Tablet Screen */ 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 64rem){
 
 }
 
 /* Mobile Screen */ 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 48rem){
 
 }

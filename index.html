@@ -1,220 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Portfolio">
-    <meta name="author" content="Lewis Crombleholme on 12.03.21">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My Portfolio">
+        <meta name="author" content="Lewis Crombleholme">
 
-    <title>Lewis Crombleholme | Web Developer</title>
+        <title>Lewis Crombleholme | Web Developer</title>
 
-    <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-    
-    <div class="container" id="home">
-        
-        <div class="parent__header">
-            <header class="header">
-        
-                <a href="#home">
-                    <h1 class="logo">Lewis Crombleholme</h1>
-                </a>
-        
-                    <nav>
-                        <ul class="nav__links">
-                            <li>
-                                <a href="#home">&lthome&gt</a>
-                            </li>
-            
-                            <li>
-                                <a href="#experience">&ltexperience & skills&gt</a>
-                            </li>
-            
-                            <li>
-                                <a href="#projects">&ltprojects&gt</a>
-                            </li>
-                        </ul>
-                    </nav>
-            
-                    <a href="#">
-                        <button class="nav__button ripple__effect">contact me</button>
-                    </a>
-        
-            </header>
-        </div>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
 
-        <div class="herobanner">
-        
-            <div class="herobanner__text">
-
-                <h2>I'm a <span class="typed__text"></span><span class="typewriter__cursor">&nbsp;</span></h2>
-
-                <p>I'm a young, talented and enthusiastic web developer with a creative passion for helping you create your vision in raising your company profile.</p>
-
-            </div>
-
-            <div class="room">
-                <img src="img/room.png" alt="Room" />
-            </div>
-            
-        </div>
-
-        <div class="experienceandskills" id="experience">
-
-            <div class="experience">
-                <h4 class="experience__open tag">&ltexperience&gt</h4>
-
-                <h1 class="category__title">Experience</h1>
-
-
-                    <div class="timeline">
-                            <div class="experience__info">
-                                <img src="img/fiverr-logo.png" alt="companylogo" />
-        
-                                <h4 class="date"> 2019 - 2020</h4>
-        
-                                <h1 class="job__role">Freelance Web Developer</h1>
-        
-                                <h2 class="company__name">@Example</h2>
-                            </div>
-    
-                            <div class="experience__info">
-                                <img src="img/fiverr-logo.png" alt="companylogo" />
-        
-                                <h4 class="date"> 2020 - 2021</h4>
-        
-                                <h1 class="job__role">Freelance Web Developer</h1>
-        
-                                <h2 class="company__name">@Fiverr</h2>
-                            </div>
-    
-                            <div class="experience__info">
-                                <img src="img/fiverr-logo.png" alt="companylogo" />
-        
-                                <h4 class="date"> 2021 - 2022</h4>
-        
-                                <h1 class="job__role">Web Developer & UI Designer</h1>
-        
-                                <h2 class="company__name">@Example</h2>
-                            </div>
+        <div class="container" id="home">
+                <section class="parent__header" id="home">
+                    <header class="header">
+                        
+                        <a href="#home">
+                            <h1 class="logo">Lewis Crombleholme</h1>
+                        </a>
+                        
+                        <nav>
+                            <ul class="nav__links">
+                                <li class="nav__item home active">
+                                    <a href="#home">&lthome&gt</a>
+                                </li>
+                                
+                                <li class="nav__item experience">
+                                    <a href="#experience">&ltexperience & skills&gt</a>
+                                </li>
+                                
+                                <li class="nav__item projects">
+                                    <a href="#projects">&ltprojects&gt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <a href="#">
+                            <button class="nav__button ripple__effect">contact me</button>
+                        </a>
+                        
+                    </header>
+                </section>
+                
+                <div class="herobanner">
+                    
+                    <div class="herobanner__text">
+                        
+                        <h2>I'm a
+                            <span class="typed__text"></span>
+                            <span class="typewriter__cursor"> &nbsp;</span>
+                        </h2>
+                        
+                        <p>I'm a young, talented and enthusiastic web developer with a creative passion for helping you create your vision in raising your company profile.</p>
+                        
                     </div>
                     
-                    <div class="timeline__pages">
-                        <button class="arrow experience__prev">
-                            <img src="img/leftarrow.png" alt="lastpage">
-                        </button>
-                        <button class="arrow experience__next">
-                            <img src="img/rightarrow.png" alt="nextpage">
-                        </button>
+                    <div class="room">
+                        <img src="img/testpic.png" alt="Room"/>
+                    </div>
+                    
+                </div>
+
+                <section class="experienceandskills" id="experience">
+                    
+                    <div class="experience__section">
+                        <h4 class="experience__open tag">&ltexperience&gt</h4>
+                        
+                        <h1 class="category__title">Experience</h1>
+                        
+                        <div class="timeline">
+                            <div class="experience__info exp__active">
+                                <img src="img/fiverr-logo.png" alt="companylogo"/>
+                                <h4 class="date">2020 - 2021</h4>
+                                <h1 class="job__role">Freelance Web Developer</h1>
+                                <h2 class="company__name">@Fiverr</h2>
+                            </div>
+                            
+                            <div class="timeline__pages">
+                                <button class="arrow experience__prev">
+                                    <img src="img/leftarrow.png" alt="lastpage">
+                                </button>
+                                <button class="arrow experience__next">
+                                <img src="img/rightarrow.png" alt="nextpage">
+                            </button>
+                        </div>
                     </div>
 
 
-                <h4 class="experience__close tag">&lt/experience&gt</h4>
-            </div>
+                    <h4 class="experience__close tag">&lt/experience&gt</h4>
+                </div>
 
-            <div class="skills">
-                <h4 class="skills__open tag">&ltskills&gt</h4>
+                <div class="skills">
+                    <h4 class="skills__open tag">&ltskills&gt</h4>
 
-                <h1 class="category__title">Skills</h1>
+                    <h1 class="category__title">Skills</h1>
 
-                <div class="skill__list">
-                    <div class="toplist">
-                        <h3 class="skill">HTML</h3>
-                        <h3 class="skill">CSS</h3>
-                        <h3 class="skill">JavaScript</h3>
+                    <div class="skill__list">
+                        <div class="toplist">
+                            <h3 class="skill">HTML</h3>
+                            <h3 class="skill">CSS</h3>
+                            <h3 class="skill">JavaScript</h3>
+                            <h3 class="skill">PHP</h3>
+                        </div>
+
+                        <div class="bottomlist">
+                            <h3 class="skill">React</h3>
+                            <h3 class="skill">Python</h3>
+                            <h3 class="skill">C#</h3>
+                        </div>
                     </div>
 
-                    <div class="bottomlist">
-                        <h3 class="skill">React</h3>
-                        <h3 class="skill">Python</h3>
-                        <h3 class="skill">C#</h3>
+                    <h4 class="skills__close tag">&lt/skills&gt</h4>
+                </div>
+
+            </section>
+
+            <section class="projects__section" id="projects">
+                <h4 class="projects__open tag">&ltprojects&gt</h4>
+
+                <h1 class="category__title">Projects</h1>
+
+                <div class="projects__tabs">
+                    <h2 class="tab__active">Web Development</h2>
+                </div>
+
+                <div class="project__selection">
+                    <!-- Project Banner One -->
+                    <div class="project__banner">
+                        <div class="project__icon">
+                            <img src="/img/RecipeApp.png" alt="Project Icon"/>
+                        </div>
+
+                        <div class="project__info">
+                            <div class="madewithtags">
+                                <button>html</button>
+                                <button>css</button>
+                                <button>javascript</button>
+                            </div>
+
+                            <div class="project__text">
+                                <h1>Portfolio</h1>
+                                <p>Want to see how my portfolio was made. Click the button below.</p>
+                            </div>
+
+                            <a href="https://github.com/LewisCrombleholme/Portfolio" target="_blank">
+                                <button class="github">
+                                    <h4>View on GitHub</h4>
+                                    <img src="/img/view.png"/>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <h4 class="skills__close tag">&lt/skills&gt</h4>
-            </div>
+                <div class="projects__pages">
+                    <button class="arrow">
+                        <img src="img/leftarrow.png" alt="lastpage">
+                    </button>
+                    <button class="arrow">
+                        <img src="img/rightarrow.png" alt="nextpage">
+                    </button>
+                </div>
 
+                <h4 class="projects__close tag">&lt/projects&gt</h4>
+            </section>
+
+            <footer>
+                <h1 class="footer__logo">Lewis Crombleholme</h1>
+
+                <div class="footer__info">
+
+                    <a href="https://www.linkedin.com/in/lewis-crombleholme-335b641ab/" target="_blank">
+                        <button class="footer__button">
+                            <img src="/img/Linkin-Icon.png" alt="Linkin"/>
+                        </button>
+                    </a>
+
+                    <a href="https://github.com/LewisCrombleholme" target="_blank">
+                        <button class="footer__button">
+                            <img src="/img/Github-Icon.png" alt="GitHub"/>
+                        </button>
+                    </a>
+
+
+                    <a href="#">
+                        <h2 class="footer__email">contact@lewiscrombleholme.co.uk</h2>
+                    </a>
+                </div>
+
+                <h3 class="copyright">Made by Lewis Crombleholme with &#128151;</h3>
+            </footer>
         </div>
 
-        <div class="projects" id="projects">
-            <h4 class="projects__open tag">&ltprojects&gt</h4>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- My JavaScript -->
+        <script type="text/javascript" src="js/app.js"></script>
 
-            <h1 class="category__title">Projects</h1>
-
-            <div class="projects__tabs">
-                <h2 class="tab__active">Web Development</h2>
-            </div>
-
-            <div class="project__selection">
-                <!-- Project Banner One -->
-                <div class="project__banner">
-                    <div class="project__icon">
-                        <img src="/img/RecipeApp.png" alt="Project Icon" />
-                    </div>
-            
-                    <div class="project__info">
-                        <div class="madewithtags">
-                            <button>html</button>
-                            <button>css</button>
-                            <button>javascript</button>
-                        </div>
-            
-                        <div class="project__text">
-                            <h1>Portfolio</h1>
-                            <p>Want to see how my portfolio was made. Click the button below.</p>
-                        </div>
-            
-                        <a href="https://github.com/LewisCrombleholme/Portfolio" target="_blank">
-                            <button class="github">
-                                <h4>View on GitHub</h4>
-                                <img src="/img/view.png"/>
-                            </button>
-                        </a>
-                    </div>
-                </div> 
-            </div>           
-
-            <div class="projects__pages">
-                <button class="arrow">
-                    <img src="img/leftarrow.png" alt="lastpage">
-                </button>
-                <button class="arrow">
-                    <img src="img/rightarrow.png" alt="nextpage">
-                </button>
-            </div>
-
-            <h4 class="projects__close tag">&lt/projects&gt</h4>
-        </div>
-
-        <footer>
-            <h1 class="footer__logo">Lewis Crombleholme</h1>
-
-            <div class="footer__info">
-                
-                <a href="#">
-                    <button class="footer__button">
-                        <img src="/img/Linkin-Icon.png" alt="Linkin" />
-                    </button>
-                </a>
-
-                <a href="#">
-                    <button class="footer__button">
-                        <img src="/img/Github-Icon.png" alt="GitHub" />
-                    </button>
-                </a>
-
-
-                <a href="#">
-                    <h2 class="footer__email">contact@lewiscrombleholme.co.uk</h2>
-                </a>
-            </div>
-
-            <h3 class="copyright">Made by Lewis Crombleholme with &#128151;</h3>
-        </footer>
-    </div>
-
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
+    </body>
 </html>
