@@ -111,6 +111,14 @@ function scrollActiveLinkControl() {
     });
 };
 
+// Form Open and Close
+function formOpenClose() {
+    var form = document.querySelector('.contactme')
+    var visibility = form.style.visibility;
+    form.style.visibility = visibility == "visible" ? 'hidden' : "visible"
+}
+
+
 
 
 

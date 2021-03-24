@@ -74,18 +74,18 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 10%;
+    padding: 40px 10%;
     z-index: 5;
 }
 
 .logo {
     position: relative;
-    width: 7.375rem;
-    height: 1.875rem;
+    width: 118px;
+    height: 30px;
 
     font-family: Ygro Bold;
-    font-size: 1rem;
-    line-height: 0.9375rem;
+    font-size: 16px;
+    line-height: 15px;
 
     color: #f5f5f5;
     cursor: pointer;
@@ -93,14 +93,14 @@ button {
 
 .nav__links li {
     display: inline-block;
-    padding: 0 2.1875rem;
+    padding: 0 35px;
 }
 
 .nav__item {
     font-family: Ygro Mid;
     font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+    font-size: 14px;
+    line-height: 22px;
 
     opacity: 0.3;
     transition: all 0.3s ease 0s;
@@ -117,18 +117,124 @@ button {
 .nav__button {
     position: relative;
     top: 0;
-    padding: 0.5625rem 1.5625rem;
-    width: 9.25rem;
-    height: 2.5rem;
+    padding: 9px 25px;
+    width: 148px;
+    height: 40px;
 
     font-family: Ygro Mid;
-    font-size: 1rem;
+    font-size: 16px;
     color: #f5f5f5;
 
-    border-radius: 2.375rem;
+    border-radius: 38px;
     background: linear-gradient(45deg, #4631C1,#6B5CC1);
     overflow: hidden;
 }
+
+/* Start - Contact Form */
+.contactme {
+    position: absolute;
+    font-family: Ygro Mid;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 6;
+
+    visibility: hidden;
+}
+
+.contact__form {
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+.contact__form > img {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+
+    border-radius: 2em;
+}
+
+.form__title {
+    position: absolute;
+    padding: 30px 20px;
+    margin-top: 30px;
+    width: 80vw;
+    height: 40px;
+}
+
+.form__title > button {
+    position: absolute;
+    background-color: transparent;
+    top: 35px;
+    left: 78%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.form__title > button > img {
+    width: 50px;
+}
+
+.form__title > h1 {
+    font-size: 18px;
+}
+
+.form__title > p {
+    font-family: Ygro Book;
+    font-size: 14px;
+}
+
+.contact__form > form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 80vw;
+    top: 12vh;
+
+}
+
+.form__group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 3px;
+    color: #f5f5f5;
+}
+
+.form__group textarea {
+    resize: none;
+}
+
+.contact__form > form > button {
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background-color: #141624;
+    color: #f5f5f6;
+    font-family: Ygro Bold;
+    font-size: 16px;
+}
+
+/* End - Contact Form */
 
 /* HeroBanner */
 
@@ -136,8 +242,8 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7.5rem;
-    padding: 4.375rem 0;
+    margin-top: 120px;
+    padding: 70px 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -148,18 +254,18 @@ button {
 }
 
 .room {
-    padding: 1.25rem 0;
+    padding: 20px 0;
 }
 
 .room > img {
-    width: 60rem;
+    width: 960px;
 }
 
 .herobanner__text {
     position: relative;
     left: 10%;
-    width: 31.25rem;
-    min-width: 31.25rem;
+    width: 500px;
+    min-width: 500px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -169,14 +275,14 @@ button {
 
 .herobanner__text > h2 {
     font-family: Ygro Bold;
-    font-size: 3.125rem;
+    font-size: 50px;
 
-    padding-bottom: 0.625rem;
+    padding-bottom: 10px;
 }
 
 .herobanner__text > p {
     font-family: Ygro Book;
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 /* Experiance */
@@ -191,36 +297,36 @@ button {
 
 .experience__section {
     position: relative;
-    padding-top: 7.5rem;
+    padding-top: 120px;
     width: 100%;
-    height: 50rem;
+    height: 800px;
 }
 
 .tag {
     font-family: Ygro Book;
-    font-size: 0.875rem;
+    font-size: 14px;
     opacity: 0.4;
 }
 
 .category__title {
     font-family: Ygro Bold;
-    font-size: 3.5rem;
+    font-size: 56px;
 }
 
 .experience__section > h1 {
     text-align: center;
-    padding-bottom: 1.875rem;
+    padding-bottom: 30px;
 }
 
 .experience__open {
     margin-left: 10.2vw;
-    padding-bottom: 5rem;
+    padding-bottom: 80px;
 }
 
 .experience__close {
     float: right;
     margin-right: 10.2vw;
-    padding-top: 5rem;
+    padding-top: 80px;
 }
 
 .timeline {
@@ -230,7 +336,7 @@ button {
     align-items: center;
     width: 100%;
 
-    margin: 4.375rem 0;
+    margin: 70px 0;
 }
 
 .experience__info {
@@ -238,15 +344,15 @@ button {
     flex-direction: column;
     align-items: flex-start;
 
-    width: 13.125rem;
-    min-width: 13.125rem;
-    height: 9.375rem;
+    width: 210px;
+    min-width: 210px;
+    height: 150px;
 
     margin: 0 2vw;
 
 
     background: #10121D;
-    border-radius: 1rem;
+    border-radius: 16px;
     opacity: 0.5;
 
     transition: all 1s 0.1s ease-in-out;
@@ -254,39 +360,39 @@ button {
 
 .experience__info > img {
     position: relative;
-    left: 1rem;
-    top: 1rem;
-    width: 1.5625rem;
+    left: 16px;
+    top: 16px;
+    width: 25px;
 }
 
 .experience__info > h4 {
     position: relative;
-    left: 7.125rem;
+    left: 114px;
 
     font-family: Ygro Book;
-    font-size: 0.75rem;
+    font-size: 12px;
 
     opacity: 0.5;
 }
 
 .experience__info > h1 {
     position: relative;
-    top: 1.25rem;
-    left: 1rem;
+    top: 20px;
+    left: 16px;
 
     font-family: Ygro Mid;
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .experience__info > h2 {
     position: relative;
-    top: 1.875rem;
-    left: 1rem;
+    top: 30px;
+    left: 16px;
 
     font-family: Ygro Book;
     font-weight: 300;
-    font-size: 1.125rem;
+    font-size: 18px;
 
     opacity: 0.5;
 }
@@ -295,23 +401,23 @@ button {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 17rem;
+    margin-top: 272px;
     display: none;
 }
 
 .arrow {
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
     text-align: center;
-    margin: 0.3125rem;
+    margin: 5px;
 
     background: #10121D;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 .arrow > img {
-    padding: 0.5625rem 0.75rem;
+    padding: 9px 12px;
     opacity: 0.7;
 }
 
@@ -324,18 +430,18 @@ button {
 
 .skills {
     position: relative;
-    top: -3rem;
+    top: -48px;
     overflow-x: hidden;
 }
 
 .skills__open {
     margin-left: 10.2vw;
-    padding-bottom: 1.875rem;
+    padding-bottom: 80px;
 }
 
 .skills__close {
     float: right;
-    padding-top: 1.875rem;
+    padding-top: 80px;
     margin-right: 10.2vw;
 }
 
@@ -356,11 +462,11 @@ button {
 
 .toplist h3 {
     position: relative;
-    left: 1.25rem;
-    padding: 1.875rem 4.375rem;
+    left: 20px;
+    padding: 30px 70px;
 
     font-family: Ygro Book;
-    font-size: 1.375rem;
+    font-size: 22px;
 }
 
 .bottomlist {
@@ -373,10 +479,10 @@ button {
 
 .bottomlist h3 {
     position: relative;
-    padding: 1.875rem 4.375rem;
+    padding: 30px 70px;
 
     font-family: Ygro Book;
-    font-size: 1.375rem;
+    font-size: 22px;
 }
 
 /* Projects */
@@ -388,7 +494,7 @@ button {
     height: -moz-fit-content;
     height: fit-content;
     overflow-x: hidden;
-    padding-top: 9.375rem;
+    padding-top: 150px;
 }
 
 .project__selection {
@@ -399,14 +505,14 @@ button {
 .projects__open {
     position: relative;
     margin-left: 10.2vw;
-    padding-bottom: 1.875rem;
+    padding-bottom: 80px;
 }
 
 .projects__close {
     position: relative;
     float: right;
     margin-right: 10.2vw;
-    padding-top: 1.875rem;
+    padding-top: 80px;
 }
 
 .projects__section > h1 {
@@ -418,32 +524,32 @@ button {
     display: flex;
     justify-content: center;
     font-family: Ygro Mid;
-    font-size: 0.75rem;
-    margin-top: 1.875rem;
+    font-size: 12px;
+    margin-top: 30px;
 }
 
 .tab__active {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding-bottom: 0.125rem;
-    border-bottom: 0.125rem solid;
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
     -o-border-image: linear-gradient(45deg, #6B5CC1, #4631C1) 1;
        border-image: linear-gradient(45deg, #6B5CC1, #4631C1) 1;
 }
 
 .project__banner {
     position: relative;
-    height: 28rem;
-    width: 17.125rem;
-    min-width: 17.125rem;
+    height: 448px;
+    width: 274px;
+    min-width: 274px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 32px;
 
     background: #10121D;
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 
 .projects__pages {
@@ -457,43 +563,43 @@ button {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 14.5625rem;
+    height: 233px;
 
     background: #141624;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
 }
 
 .project__icon > img {
     position: relative;
-    width: 6.25rem;
-    height: 6.25rem;
-    margin: 4.1875rem 5.4375rem 4.125rem 5.4375rem;
+    width: 100px;
+    height: 100px;
+    margin: 67px 87px 66px 87px;
 
     opacity: 0.8;
 }
 
 .project__info {
     position: relative;
-    top: 7.5rem;
-    height: 13.4375rem;
-    padding: 1rem 1rem 1.5rem 1rem;
+    top: 120px;
+    height: 215px;
+    padding: 16px 16px 24px 16px;
 }
 
 .madewithtags > button {
     position: relative;
-    height: 1.4375rem;
+    height: 23px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 0.125rem 0.625rem;
-    margin: 0 0.5rem 1rem 0;
+    padding: 2px 10px;
+    margin: 0 8px 16px 0;
 
     font-family: Ygro Book;
-    font-size: 0.75rem;
+    font-size: 12px;
 
     background: #4631C1;
-    border-radius: 0.875rem;
+    border-radius: 14px;
 
     color: #f5f5f5;
     opacity: 0.8;
@@ -501,33 +607,33 @@ button {
 
 .project__text > h1 {
     font-family: Ygro Mid;
-    font-size: 1.125rem;
-    margin-bottom: 0.3125rem;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .project__text > p {
     font-family: Ygro Book;
-    font-size: 0.875rem;
-    margin-bottom: 1.875rem;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .github {
-    margin-left: 2.3125rem;
-    width: 10.5rem;
-    height: 2.625rem;
+    margin-left: 37px;
+    width: 168px;
+    height: 42px;
     background: #181A2B;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 
     transition: all 1s ease-in-out;
 }
 
 .github > h4 {
     float: left;
-    padding: 0.6875rem 0 0.75rem 1rem;
+    padding: 11px 0 12px 16px;
 
     font-family: Ygro Book;
     font-weight: 100;
-    font-size: 0.9375rem;
+    font-size: 15px;
 
     color: #f5f5f6;
     opacity: 0.5;
@@ -535,12 +641,12 @@ button {
 
 .github > img {
     position: relative;
-    top: 0.8125rem;
+    top: 13px;
 }
 
 .github:hover {
-    transform: translateY(-0.3125rem);
-    box-shadow: -0.1875rem 0.3125rem 0.9375rem 0.0125rem rgba(27, 19, 76, 0.4);
+    transform: translateY(-5px);
+    box-shadow: -3px 5px 15px .2px rgba(27, 19, 76, 0.4);
 
 }
 
@@ -548,32 +654,32 @@ button {
 
 footer {
     position: relative;
-    height: 12.5rem;
+    height: 200px;
     width: 100%;
 
-    margin-top: 6.25rem;
+    margin-top: 100px;
 
     background: linear-gradient(269.4deg, #4631C1 -13.43%, #10121D 119.65%);
 }
 
 .footer__logo {
     position: relative;
-    top: 3.875rem;
-    width: 12.5rem;
+    top: 62px;
+    width: 200px;
     margin-left: 10vw;
 
     font-family: Ygro Bold;
-    font-size: 1.875rem;
-    line-height: 1.625rem;
+    font-size: 30px;
+    line-height: 26px;
 }
 
 .footer__button {
-    width: 2.625rem;
-    height: 2.625rem;
-    border-radius: 2.625rem;
-    padding: 0.6875rem 0.75rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    padding: 11px 12px;
     float: right;
-    margin: 0 0 0.8125rem 1rem;
+    margin: 0 0 13px 16px;
 
     background-color: #4631C1;
 }
@@ -586,7 +692,7 @@ footer {
 .footer__email {
     font-family: Ygro Book;
     font-weight: 600;
-    font-size: 1.375rem;
+    font-size: 22px;
 }
 
 .copyright {
@@ -594,11 +700,11 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    top: 1.875rem;
+    top: 30px;
 
     font-family: Ygro Book;
     font-weight: 300;
-    font-size: 0.875rem;
+    font-size: 14px;
     
     opacity: 0.5;
 }
@@ -681,26 +787,26 @@ footer {
 
 @-webkit-keyframes ripple {
     0% {
-        width: 0rem;
-        height: 0rem;
+        width: 0px;
+        height: 0px;
         opacity: 0.5;
     }
     100% {
-        width: 25rem;
-        height: 25rem;
+        width: 400px;
+        height: 400px;
         opacity: 0;
     }
 }
 
 @keyframes ripple {
     0% {
-        width: 0rem;
-        height: 0rem;
+        width: 0px;
+        height: 0px;
         opacity: 0.5;
     }
     100% {
-        width: 25rem;
-        height: 25rem;
+        width: 400px;
+        height: 400px;
         opacity: 0;
     }
 }
@@ -709,7 +815,7 @@ footer {
 
 /* Total Width */
 body::-webkit-scrollbar {
-    width: 0.75rem;
+    width: 12px;
 }
 /* background of the scrollbar apart from button or resizer */
 body::-webkit-scrollbar-track {
@@ -718,8 +824,8 @@ body::-webkit-scrollbar-track {
 /* scrollbar itself */
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(180deg, #4631C1,#6B5CC1);
-    border-radius: 0.75rem;
-    border: 0.25rem solid #090A11;
+    border-radius: 12px;
+    border: 4px solid #090A11;
 }
 /* Set top and bottom buttons */
 body::-webkit-scrollbar-button {
@@ -728,11 +834,106 @@ body::-webkit-scrollbar-button {
 
 
 /* Tablet Screen */ 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 1024px){
 
+    .herobanner {
+        position: relative;
+        top: 50px;
+    }
+
+    .herobanner__text {
+        width: 450px;
+        min-width: 400px;
+    }
+
+    .herobanner__text > h2 {
+        font-size: 45px;
+        text-align: justify;
+    }
+
+    .room img {
+        position: relative;
+        left: 50px;
+        width: 700px;
+    }
+
+    .copyright {
+        top: 40px;
+    }
 }
 
 /* Mobile Screen */ 
-@media screen and (max-width: 48rem){
+@media screen and (max-width: 768px){
+    nav {
+        display: none;
+    }
 
+    .header {
+        height: 100px;
+    }
+
+    .nav__button {
+        font-size: 14px;
+        width: 130px;
+        height: auto;
+    }
+
+    .herobanner {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .herobanner__text > h2 {
+        font-size: 35px;
+    }
+
+    .herobanner__text > p {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .room {
+        position: relative;
+        float: left;
+        top: 70px;
+    }
+
+    .room > img {
+        position: relative;
+        width: 600px;
+        left: -70px;
+    }
+
+    .skills {
+        margin-top: 150px;
+    }
+
+    .toplist h3 {
+        padding: 0 10px;
+        font-size: 18px;
+        left: 0;
+    }
+
+    .bottomlist h3 {
+        padding: 0 10px;
+        font-size: 18px;
+        left: 0;
+    }
+
+    .footer__logo {
+        font-size: 20px;
+    }
+
+    .footer__info > a {
+        position: relative;
+        top: 10px;
+    }
+
+    .footer__email {
+        display: none;
+    }
+
+    .copyright {
+        top: 70px;
+    }
 }
