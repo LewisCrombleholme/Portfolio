@@ -835,26 +835,28 @@ body::-webkit-scrollbar-button {
 
 /* Tablet Screen */ 
 @media screen and (max-width: 1024px){
+    nav {
+        display: none;
+    }
 
     .herobanner {
-        position: relative;
-        top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .herobanner__text {
-        width: 450px;
-        min-width: 400px;
+        left: 0;
+        padding-top: 100px;
     }
 
-    .herobanner__text > h2 {
-        font-size: 45px;
-        text-align: justify;
+    .room {
+        padding-top: 175px;
+        padding-bottom: 50px;
     }
 
-    .room img {
-        position: relative;
-        left: 50px;
-        width: 700px;
+    .room > img {
+        margin-left: 5%;
     }
 
     .copyright {
@@ -879,31 +881,37 @@ body::-webkit-scrollbar-button {
     }
 
     .herobanner {
-        margin-top: 50px;
-        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
     }
 
-    .herobanner__text > h2 {
-        font-size: 35px;
-    }
-
-    .herobanner__text > p {
-        font-size: 15px;
+    .herobanner__text {
+        padding-top: 0;
+        left: 0;
         width: 300px;
     }
 
+    .herobanner__text > h2 {
+        font-size: 2rem;
+        padding-left: 20%;
+    }
+
+    .herobanner__text > p {
+        width: 400px;
+        font-size: 1rem;
+        padding-left: 20%;
+    }
+
     .room {
-        position: relative;
-        float: left;
-        top: 70px;
+        padding-top: 100px;
     }
 
     .room > img {
-        position: relative;
-        width: 600px;
-        left: -70px;
+        width: 650px;
     }
-
+    
     .skills {
         margin-top: 150px;
     }
